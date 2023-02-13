@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Profile from './Profile';
 import TicTacToe from './TicTacToe';
+import DarkMode from './DarkMode'
 
 const App = (props) => {
   const profile = {
@@ -12,9 +13,7 @@ const App = (props) => {
 
   return <div className="app">
     <Profile profile={profile} />
-    <div className="dark-mode">
-      <h1>Dark Mode</h1>
-    </div>
+    <DarkMode />
     <TicTacToe />
     <div className="todo">
       <h1>Todo</h1>
